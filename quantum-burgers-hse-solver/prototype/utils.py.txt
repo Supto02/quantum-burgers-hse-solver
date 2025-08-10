@@ -1,0 +1,11 @@
+import numpy as np
+from qiskit import transpile
+
+def compute_l2_error(u_quantum, u_classical):
+    return np.sqrt(np.mean((u_quantum - u_classical)**2))
+
+def apply_error_mitigation(counts, n_qubits):
+    valid_states = [format(i, f'0{n_qubits}b') for i in range(2**n_qubits)]
+    total_valid = sum(counts.get(state, 0) for state in valid_states)
+    return {state: counts.get(state, 0)/total_valid for state in valid_states}
+    
