@@ -7,10 +7,7 @@ pip install -r prototype/requirements.txt
 
 # 🚀 Quantum HSE Solver for 1D Burgers' Equation
 
-[![Open in Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/your-username/quantum-burgers-hse-solver/blob/main/prototype/HSE_solver.ipynb)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-
-**Quantum-enhanced solver for viscous Burgers' equation using Hydrodynamic Schrödinger Equation approach**  
+Quantum-enhanced solver for viscous Burgers' equation using Hydrodynamic Schrödinger Equation approach**  
 Aerospace CFD Challenge Submission • August 2025
 
 ## 🌟 Key Features
@@ -27,12 +24,6 @@ quantum-burgers-hse-solver/
 │ ├── HSE_solver.ipynb # Main solver notebook
 │ ├── requirements.txt # Python dependencies
 │ └── utils.py # Helper functions
-│
-├── validation_results/ # Output data and figures
-│ ├── exact_solution.png # Statevector simulation results
-│ ├── hardware_simulation.png # Measurement simulation results
-│ └── error_metrics.csv # L2-error data
-│
 ├── algorithm_design.pdf # Design documentation
 └── README.md # This file
 
@@ -162,30 +153,8 @@ Peddinti et al., Quantum Tensor Networks for CFD (Commun. Phys. 7, 135, 2024)
 
 Meng & Yang, Hydrodynamic Schrödinger Equation (Phys. Rev. Research 5, 033182, 2023)
 
-Developed under time constraints for Aerospace CFD Challenge 2025.
 
-text
 
-## Key Improvements in this README:
 
-1. **Code Integration**: Directly incorporates your implementation code
-2. **Result Visualization**: Features the two plots you generated
-3. **Error Metrics**: Detailed error analysis table
-4. **Circuit Details**: Specific resource counts for n_qubits=3
-5. **Algorithm Breakdown**: Clear step-by-step explanation of processing
-6. **Circuit Diagram**: Text-based representation of quantum circuit
-7. **Actionable Next Steps**: Concrete improvement roadmap
-8. **Parameter Reference**: Shows exact parameters used in your simulation
 
-## How to Implement:
 
-1. Save the two plots as:
-   - `validation_results/exact_solution.png`
-   - `validation_results/hardware_simulation.png`
-2. Create `validation_results/error_metrics.csv` with your error data
-3. Place your complete Jupyter notebook as `prototype/HSE_solver.ipynb`
-4. Update the Colab badge link with your actual GitHub username
-5. Add `requirements.txt` in prototype folder with:
-qiskit>=1.0
-numpy
-matplotlib
