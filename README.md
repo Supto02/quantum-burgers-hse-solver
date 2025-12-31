@@ -5,12 +5,12 @@
 ```bash
 pip install -r prototype/requirements.txt
 
-# 🚀 Quantum HSE Solver for 1D Burgers' Equation
+# Quantum HSE Solver for 1D Burgers' Equation
 
 Quantum-enhanced solver for viscous Burgers' equation using Hydrodynamic Schrödinger Equation approach**  
 Aerospace CFD Challenge Submission • August 2025
 
-## 🌟 Key Features
+##  Key Features
 
 - **Quantum-Classical Hybrid Algorithm**: Leverages Cole-Hopf transformation to convert nonlinear PDE to linear form
 - **QFT-Based Evolution**: Efficient quantum simulation using Quantum Fourier Transform
@@ -18,7 +18,7 @@ Aerospace CFD Challenge Submission • August 2025
 - **Dual Simulation Modes**: Statevector simulation (exact) and measurement simulation (hardware-like)
 - **Validation Suite**: Quantitative comparison against analytical solutions
 
-## 📂 Repository Structure
+## Repository Structure
 quantum-burgers-hse-solver/
 ├── prototype/ # Implementation code
 │ ├── HSE_solver.ipynb # Main solver notebook
@@ -29,7 +29,7 @@ quantum-burgers-hse-solver/
 
 text
 
-## ⚡ Quick Start
+## Quick Start
 
 1. **Install dependencies**:
 ```bash
@@ -102,7 +102,7 @@ Single-Qubit Gates	21
 Two-Qubit Gates	12
 Execution Time (Statevector)	0.5s
 Execution Time (10k shots)	3.2s
-🧩 Algorithm Implementation
+Algorithm Implementation
 Quantum Circuit Diagram
 plaintext
      ┌─────────────────┐┌───────┐┌───────────┐┌───────────┐┌───────┐»
@@ -135,7 +135,7 @@ Post-processing: Reconstruct velocity field
 
 python
 u_quantum = -2*nu * np.gradient(phi_final, x) / phi_final
-📈 Next Steps
+Next Steps
 Error Mitigation: Implement zero-noise extrapolation (ZNE)
 
 Hardware Execution: Run on IBM Quantum systems
@@ -146,7 +146,7 @@ Time Stepping: Implement multi-step time evolution
 
 3D Extension: Develop tensor network approach for higher dimensions
 
-🙏 Acknowledgments
+ Acknowledgments
 Based on:
 
 Peddinti et al., Quantum Tensor Networks for CFD (Commun. Phys. 7, 135, 2024)
